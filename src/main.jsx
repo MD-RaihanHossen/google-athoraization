@@ -1,6 +1,7 @@
 import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
 import './index.css'
+import Athorrigation from './Components/Athorrigation/Athorrigation.jsx';
 
 //from react router 
 import {
@@ -9,19 +10,17 @@ import {
 } from "react-router-dom";
 import Home from './Components/Home/Home.jsx';
 import Error from './Components/Error/Error.jsx';
-import GoogleAthor from './Components/GoogleAthor/GoogleAthor.jsx';
 
 const router = createBrowserRouter([
   {
-    path : "/",
-    element : <Home></Home>,
+    path: "/",
+    element: <Home></Home>,
     errorElement: <Error></Error>,
-    children : [
+    children: [
       {
-        path : "/google",
-        element : <GoogleAthor></GoogleAthor>,
-
-      },
+        path: "/",
+        element: <Athorrigation></Athorrigation>
+      }
     ]
 
   },

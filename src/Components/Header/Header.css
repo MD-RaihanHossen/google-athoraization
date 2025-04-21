@@ -1,6 +1,6 @@
 a.active{
     background-color: red;
-    padding: 4px;
+    padding: 10px 40px 10px 40px;
     border-radius: 5px;
     color: white;
 }
